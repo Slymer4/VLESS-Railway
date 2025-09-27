@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -14,8 +14,10 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {},
         "wsSettings": {
-          "path": "/vless"
+          "path": "/ray"
         }
       }
     }
@@ -27,8 +29,5 @@
     }
   ]
 }
-
-}
-
 
 
