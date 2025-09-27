@@ -12,6 +12,6 @@ RUN curl -Ls https://github.com/XTLS/Xray-core/releases/latest/download/Xray-lin
 # Копируем конфиг
 COPY config.json /xray/config.json
 
-EXPOSE 8080
+EXPOSE 443
 
 CMD ["/xray/bin/xray", "-config", "/xray/config.json"]
