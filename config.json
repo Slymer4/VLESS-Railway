@@ -1,21 +1,22 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "2595367a-6ebe-4bb2-b11f-e870f655d47a",
-            "flow": ""
+            "id": "123e4567-e89b-12d3-a456-426614174000"
           }
         ],
         "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {},
         "wsSettings": {
-          "path": "/vless"
+          "path": "/ray"
         }
       }
     }
@@ -27,3 +28,4 @@
     }
   ]
 }
+
